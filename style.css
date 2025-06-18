@@ -237,6 +237,61 @@ body{
   color: #ccc;
   line-height: 1.6;
 }
+/* proof of work section */
+.certification-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  max-height: 320px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+  align-items:center;
+  margin-top:175px;
+  /* padding:2rem; */
+}
+
+.certification-card h2 {
+  background: linear-gradient(to right, #00c96b, #009f52);
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align:center;
+}
+
+.certification-card-content {
+  background-color: #1b1e27;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.certification-card-content .main-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.certification-card-content .sub-text {
+  color: #ccc;
+  font-size: 1remrem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.certification-card-content .tagline {
+  color: #00c96b;
+  font-size: 1.3rem;
+  border-top: 3px solid #00c96b33;
+  padding-top: 0.75rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items:center;
+}
+
 /* stats */
 .stats-box {
   flex: 1;
