@@ -315,6 +315,9 @@ body{
   margin-bottom: 15px;
   text-shadow: 0 0 5px #00ffff88;
 }
+.githubstats{
+  margin-top:3rem;
+}
 /* hobbies container */
 .hobbiesoutercontainer {
   display: grid;
@@ -430,6 +433,8 @@ body{
   display:flex;
   flex-wrap: wrap;
   margin-left:2rem;
+  max-width: 80%;
+  margin: 1rem auto 0 auto;
 
 }
 
@@ -444,6 +449,14 @@ body{
   color: #aaa;
   font-size: 1.1rem;
   line-height: 1.6;
+  padding:6px;
+}
+.footer-left h2{
+  margin: 0.3rem 0;
+  color: #aaa;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding:6px;
 }
 .footer-left i {
   margin-right: 8px;
@@ -498,5 +511,5 @@ body{
   text-align: center;
   color: #888;
   font-size: 0.9rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
