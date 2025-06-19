@@ -375,7 +375,45 @@ body{
 .chess{
   width: 200px;
 }
+/* typing section */
+.typing{
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: rem;
+}
+.typing{
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: rem;
+}
 
-@media-queries (min-width: 1024px) {
+.typingcontent {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between image and text */
+}
 
+.typingcontent h3 {
+  font-size: 1.7rem;
+  margin: auto;
+  
+}
+.typingcontent p {
+  color: #888;
+  margin: 0;
+  font-size:1.2rem;
+}
+.typingcontent h5 {
+  color: #00ff66;
+  margin-bottom: 1rem;
+  font-size:2rem;
+  margin-top:1rem;
+  align-items:center;
+}
+.typing-text {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  justify-content: center;
 }
