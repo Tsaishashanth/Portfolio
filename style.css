@@ -354,7 +354,7 @@ body{
   margin-top: 1rem;
 }
 
-.my-bike-pic {
+.bike{
   width: 300px;
   height: auto;
   border-radius: 10px;
@@ -416,4 +416,87 @@ body{
   display: flex;
   flex-direction: column; /* stack vertically */
   justify-content: center;
+}
+/* footer class */
+.footer-border {
+  border-top: 2px solid #00ffff33;
+}
+
+.footer {
+  margin-top: 1rem;
+  background: #0f0f0f;
+  padding: 1rem 1rem;
+  color: #ccc;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left:2rem;
+
+}
+
+.footer-left h3 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.footer-left p {
+  margin: 0.3rem 0;
+  color: #aaa;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.footer-left i {
+  margin-right: 8px;
+  color: #00ffff;
+}
+.footer-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.footer-right input,
+.footer-right textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.footer-right button {
+  padding: 10px;
+  background: #00ff99;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.footer-right {
+  width: 35%; /* increase from 45% to 55% or as needed */
+  flex-direction:column;
+  display:flex;
+  margin-left:3rem;
+}
+.footer-left{
+  width:55%;
+  margin-right:2rem;
+}
+.footer-right h3 {
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+.footer-borderdown{
+  border-top: 2px solid #00ffff33;
+  margin-top:2rem;
+}
+.footer-note {
+  margin-top:2rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
