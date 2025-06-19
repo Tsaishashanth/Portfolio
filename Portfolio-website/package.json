@@ -1,8 +1,4 @@
 {
-  "dependencies": {
-    "express": "^5.1.0",
-    "nodemailer": "^7.0.3"
-  },
   "name": "portfolio-website",
   "version": "1.0.0",
   "main": "script.js",
@@ -13,5 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3"
+  }
 }

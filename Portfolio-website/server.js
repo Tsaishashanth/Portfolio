@@ -7,6 +7,11 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname)));
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname));
+});
+
+
 app.post('/send-email', async (req, res) => {
     const{name,email,message}= req.body;
 
