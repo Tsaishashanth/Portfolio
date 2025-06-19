@@ -6,6 +6,7 @@
     <title>Tarigopula Sai Shashanth</title>
     <link rel="icon" type="image/png" href="profilephoto.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -13,13 +14,13 @@
         <nav class = "navcontainer">
             <ul class ="nav-links">
                 <li>Home</li>
-                <li>Projects</li>                
-                <li>Contact</li>                
+                <li><a href="#projects">Projects</a></li>                
+                <li><a href="#Contact">Contact</a></li>                
             </ul>
             <div class="socials">
-                <span>In</span>
-                <span>Git Hub</span>
-                <span>Twitter</span>
+                <a href="https://www.linkedin.com/in/sai-shashanth-tarigopula-80a167287/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Tsaishashanth" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/SaiXShashanth" target="_blank"><i class="fab fa-x-twitter"></i></a>
             </div>
         </nav>
     </header>
@@ -30,7 +31,8 @@
             <p>
                 I'm a passionate developer with a strong interest in web development, Web3, and data structures & algorithms (DSA). I’ve solved 50+ DSA problems, constantly sharpening my problem-solving and coding skills. I’m also an active open source contributor.
             </p>
-            <button class ="start-btn">Check Out My Resume ➤</button>
+            <button class ="start-btn" onclick="openResume()">Check Out My Resume ➤</button>
+
         </div>
         <div class = "aboutme-image">
             <img src = "profilephoto.png" alt="My Profile Picture" />
@@ -85,7 +87,7 @@
 
     <!-- projects section -->
      
-    <div class="bar">
+    <div id="projects" class="bar">
         <div>
             <h2>Projects</h2>
         </div>
@@ -93,7 +95,7 @@
 
     <div class="container">
         <!-- projectone -->
-        <div class="project-box">
+        <div onclick="openlumaboard()" class="project-box">
             <h3>Luma Board</h3>
         </div>
         <!-- projecttwo -->
@@ -232,13 +234,13 @@
    <div class="footer-border"></div>
 
   <!-- footer class -->
-   <footer class="footer">
+   <footer id="Contact" class= "footer">
   <div class="footer-left">
     <h3>Get in touch</h3>
     <h2>Have a project for me? Any questions about something I've built? I'd love to hear from you. Drop me a message or use the contact form below!</h2>
     <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
     <p><i class="fas fa-envelope"></i> saishashanthtarigopula@gmail.com</p>
-    <p><i class="fab fa-linkedin"></i> Tarigopula Sai Shashanth</p>
+    <p><i class="fab fa-linkedin"></i>  Sai Shashanth Tarigopula</p>
   </div>
   <div class="footer-right">
   <h3>Send a Message</h3>
