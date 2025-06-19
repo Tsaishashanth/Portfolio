@@ -1,5 +1,5 @@
 function openResume() {
-    window.open('sai_shashanth-BMSCE-resume.pdf', '_blank');
+    window.open('sai_shashanth-resume.pdf', '_blank');
   }
 
 function openlumaboard(){
@@ -11,10 +11,11 @@ function openlumaboard(){
 document.getElementById('contact-form').addEventListener('submit', async function (e) {
   e.preventDefault();
 
-  // Manually get values using querySelector
-  const name = document.querySelector('input[name="name"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
+  const formData = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.message.value,
+  };
 
   try {
     const response = await fetch('/send-email', {
