@@ -4,12 +4,14 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 
-const cors = require('cors');
+
 
 // Allow only your frontend URL (safe practice)
 app.use(cors({
   origin: 'https://shashanthportfolio.vercel.app', // your frontend URL
 }));
+// app.options('*', cors()); // Handles preflight requests
+
 
 app.use(express.json());
 
