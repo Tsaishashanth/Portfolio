@@ -18,7 +18,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   };
 
   try {
-    const response = await fetch('/send-email', {
+    const response = await fetch('https://shashanthportfolio.onrender.com/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
