@@ -407,12 +407,7 @@ a:visited {
   border-radius: 10px;
   margin-top: rem;
 }
-.typing{
-  width: auto;
-  height: 300px;
-  border-radius: 10px;
-  margin-top: rem;
-}
+
 
 .typingcontent {
   display: flex;
@@ -535,4 +530,229 @@ a:visited {
   color: #888;
   font-size: 0.9rem;
   margin-bottom: 2rem;
+}
+
+/* adding media quires */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    padding: 10px 20px;
+    margin:1rem auto;
+  }
+
+  .navcontainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
+  .nav-links {
+    flex-direction: row; /* keep nav links in a row */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-links li {
+    font-size: 1rem;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row; /* keep socials in a row */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .aboutme {
+    flex-direction: column-reverse; /* this puts image first */
+    padding: 30px 20px;
+    width: 95%;
+    text-align: center;
+  }
+
+  .aboutme-text {
+    max-width: 100%;
+  }
+
+  .aboutme-text h1 {
+    font-size: 28px;
+  }
+
+  .aboutme-text p {
+    font-size: 14px;
+  }
+
+  .start-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .aboutme-image img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .bar {
+    width: 90%;
+    padding: 0.8rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bar h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+    padding: 1rem;
+  }
+
+  .tech-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .tech-box h3 {
+    font-size: 18px;
+  }
+
+  .tech-box li {
+    font-size: 1rem;
+    height: auto;
+  }
+
+  .githubstats{
+    max-width:100%;
+    margin-top:1rem;
+  }
+
+  .leetcodestats {
+    max-width:100%;
+  }
+
+  .certification-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  max-height: 320px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+  align-items:center;
+  margin-top:1rem;
+  /* padding:2rem; */
+}
+
+.certification-card h2 {
+  background: linear-gradient(to right, #00c96b, #009f52);
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align:center;
+}
+
+.certification-card-content {
+  background-color: #1b1e27;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.certification-card-content .main-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.certification-card-content .sub-text {
+  color: #ccc;
+  font-size: 1remrem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.certification-card-content .tagline {
+  color: #00c96b;
+  font-size: 1.3rem;
+  border-top: 3px solid #00c96b33;
+  padding-top: 0.75rem;
+  width: 100%;
+  margin: 0 auto;
+  align-items:center;
+}
+}
+@media (max-width: 768px) {
+  .hobbiesoutercontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .hobbiescontainer-left,
+  .hobbiescontainer-right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my-hobbies-img {
+    width: 1000%;
+    max-width: 250px;
+    margin-top: 1rem;
+  }
+
+  .timeline-content {
+    padding: 0 1rem;
+  }
+
+  .timeline-content h4 {
+    display:none;
+  }
+
+  .typing {
+    height: 200px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .typingcontent {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    margin: 0;
+  }
 }
