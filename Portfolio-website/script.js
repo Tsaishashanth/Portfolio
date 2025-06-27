@@ -1,5 +1,5 @@
 function openResume() {
-    window.open('sai_shashanth-resume.pdf', '_blank');
+    window.open('sai_shashanth-BMSCE-resume.pdf', '_blank');
   }
 
 function openlumaboard(){
