@@ -6,6 +6,13 @@ function openlumaboard(){
     window.open('https://lumaboard.vercel.app/', '_blank');
 }
 
+function opengithub(){
+  window.open('https://github.com/Tsaishashanth', '_blank');
+}
+
+function openleetcode(){
+  window.open('https://leetcode.com/u/shashanthaiml2024/', '_blank');
+}
 // message sending section
 
 document.getElementById('contact-form').addEventListener('submit', async function (e) {
