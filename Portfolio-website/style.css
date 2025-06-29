@@ -179,6 +179,7 @@ a:visited {
   /* flex-direction:column; */
   justify-content:center;
   /* background-color: #0f1c2e; */
+  background-color:#1a1a1a;
 }
 .tech-box {
   flex: 1;
@@ -189,11 +190,11 @@ a:visited {
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
+  
 }
 .symbolssize{
   display:flex;
   gap:40px;
-  background-color:#1a1a1a;
   align-items:center;
   width:100%;
   justify-content:center;
@@ -673,10 +674,35 @@ a:visited {
     gap: 20px;
     padding: 1rem;
   }
-
+  .containertech{
+    /* display:flex; */
+    flex-direction:column;
+  }
+  .tech-row{
+    display:flex;
+    flex-direction:column;
+  }
+  .stacksymbols {
+    max-width:100%;
+    /* justify-content:center; */
+    overflow: hidden;
+    height:auto;
+    
+  }
+  .symbolssize{
+    max-width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
   .tech-box {
     width: 90%;
     padding: 15px;
+    
   }
 
   .tech-box h3 {
