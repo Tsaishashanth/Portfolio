@@ -13,6 +13,9 @@ function opengithub(){
 function openleetcode(){
   window.open('https://leetcode.com/u/shashanthaiml2024/', '_blank');
 }
+function opendevseekr() {
+  window.open('https://devseekr.vercel.app/', '_blank');
+}
 // message sending section
 
 document.getElementById('contact-form').addEventListener('submit', async function (e) {
