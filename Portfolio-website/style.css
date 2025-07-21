@@ -661,15 +661,19 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   }
 }
 @media (max-width: 768px) {
-  .aboutme {
+  .aboutmeinside {
     flex-direction: column-reverse; /* this puts image first */
     padding: 30px 20px;
     width: 95%;
     text-align: center;
+    justify-content:center;
+    align-items:center;
   }
 
   .aboutme-text {
     max-width: 100%;
+    justify-content:center;
+    align-items:center;
   }
 
   .aboutme-text h1 {
@@ -766,9 +770,10 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   max-height: 320px;
   overflow: hidden;
   font-family: Arial, sans-serif;
-  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
   align-items:center;
   margin-top:1rem;
+  border-radius:30px;
   /* padding:2rem; */
 }
 
