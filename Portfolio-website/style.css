@@ -2,7 +2,8 @@ body{
     margin:0;
     font-family:Arial, sans-serif;
     background-color: #0f0f0f;
-    color:white;
+    /* background: linear-gradient(135deg, #a0f1c4, #aee9f8); */ 
+    color:white;  
 }
 html {
   scroll-behavior: smooth;
@@ -75,6 +76,12 @@ a:visited {
     padding: 60px 40px;
     width:80%;
     margin:auto;
+    /* background:linear-gradient(135deg, #a0f1c4, #aee9f8); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(250, 16, 16, 0.18);
+
     
 }
 
