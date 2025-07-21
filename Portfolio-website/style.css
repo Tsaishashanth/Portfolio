@@ -134,6 +134,9 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     /* line-height: 1.6; */
     color: #aeeff0;
 }
+.ptext{
+  color: #000202;
+}
 
 .start-btn {
   margin-top: 20px;
@@ -221,6 +224,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   justify-content:center;
   /* background-color: #0f1c2e; */
   background-color:#1a1a1a;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  border-radius:12px;
 }
 .tech-box {
   flex: 1;
