@@ -98,15 +98,23 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   margin: auto;
 
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0.05)
-  );
+  135deg,
+  rgba(0, 200, 255, 0.15),
+  rgba(255, 255, 255, 0.05)
+);
+
+  
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+
   border-radius: 30px;
-  background: linear-gradient(135deg, rgba(0, 200, 255, 0.15), rgba(0, 100, 255, 0.05));
-border: 1px solid rgba(0, 200, 255, 0.2);
-box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
+
+  position: relative;
+  z-index: 1;
 }
+
 
 
 .aboutme-text {
@@ -222,8 +230,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   /* flex-direction:column; */
   justify-content:center;
   /* background-color: #0f1c2e; */
-  background-color:#1a1a1a;
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  background-color:#ffffff;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
   border-radius:12px;
 }
 .tech-box {
