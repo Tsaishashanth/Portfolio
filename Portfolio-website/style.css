@@ -142,7 +142,10 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     color: #aeeff0;
 }
 .ptext{
-  color: #000202;
+  margin-top:1rem;
+  font-size:30px;
+  color: #137e7e;
+  margin-bottom:1rem;
 }
 
 .start-btn {

@@ -16,6 +16,46 @@ function openleetcode(){
 function opendevseekr() {
   window.open('https://devseekr.vercel.app/', '_blank');
 }
+
+// this is for changing roles for every2seconds
+  const roles = [
+    "Frontend Developer",
+    "Backend Developer",
+    "Fullstack Developer"
+  ];
+
+  let roleIndex = 0;
+  let charIndex = 0;
+  const roleElement = document.getElementById("role");
+
+  function typeRole() {
+    const currentRole = roles[roleIndex];
+    if (charIndex < currentRole.length) {
+      roleElement.textContent += currentRole.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeRole, 100); // Typing speed
+    } else {
+      setTimeout(() => {
+        eraseRole();
+      }, 1500); // Pause before erasing
+    }
+  }
+
+  function eraseRole() {
+    const currentText = roleElement.textContent;
+    if (currentText.length > 0) {
+      roleElement.textContent = currentText.slice(0, -1);
+      setTimeout(eraseRole, 50); // Deleting speed
+    } else {
+      roleIndex = (roleIndex + 1) % roles.length;
+      charIndex = 0;
+      setTimeout(typeRole, 300);
+    }
+  }
+
+  // Start typing
+  typeRole();
+
 // message sending section
 
 document.getElementById('contact-form').addEventListener('submit', async function (e) {
