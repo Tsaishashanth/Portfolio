@@ -238,6 +238,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   border-radius:12px;
 }
 .tech-box {
+  display:flex;
+  flex-direction:column;
   flex: 1;
   background: linear-gradient(135deg, #0f1c2e, #2e1f3f);
   padding: 20px;
@@ -246,6 +248,41 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+.still-item{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  gap:30px;
+  align-items:center;
+  justify-content:center;
+  list-style-type: disc;    /* ✅ Show the bullet */
+  list-style-position: inside;
+  
+}
+
+.still-learning{
+  position:relative;
+  display:flex;
+  width:100%;
+  height:1.5rem;
+  border-radius:30px;
+  padding: 4px 10px;
+  justify-content:center;
+  align-items:center;
+  background-color:transparent;
+  border: 1px solid green;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.1);
+
+}
+.still-learning::before {
+  content: "•";               /* ✅ Custom white bullet */
+  color:green;
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  margin-left:6px;
   
 }
 .symbolssize{
