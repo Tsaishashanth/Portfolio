@@ -265,26 +265,31 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
 .still-learning{
   position:relative;
   display:flex;
+  flex-direction:row;
   width:100%;
-  height:1.5rem;
+  height:1.3rem;
   border-radius:30px;
   padding: 4px 10px;
   justify-content:center;
   align-items:center;
   background-color:transparent;
   border: 1px solid green;
-  box-shadow: 0 0 30px rgba(0, 255, 136, 0.1);
+  /* box-shadow: 0 0 30px rgba(0, 255, 136, 0.1); */
+  gap:5px;
 
 }
-.still-learning::before {
-  content: "•";               /* ✅ Custom white bullet */
-  color:green;
-  position: absolute;
-  left: 0;
-  font-size: 1.5em;
-  margin-left:6px;
-  
+
+.dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: green;
+  border-radius: 50%;
 }
+
+/* .Learning-text{
+  font-family: 'Lucida Console', 'Lucida Sans Unicode', 'Lucida Sans', monospace;
+} */
+
 .symbolssize{
   display:flex;
   gap:40px;
