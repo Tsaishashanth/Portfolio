@@ -226,14 +226,14 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
 
 .stacksymbols {
   /* margin-top:2rem; */
-  border: 1px solid #00ffff33;
+  border: 1px solid #f5f7f733;
   height:4rem;
   width: 100%;
   display:flex;
   /* flex-direction:column; */
   justify-content:center;
   /* background-color: #0f1c2e; */
-  background-color: rgba(255, 255, 255, 0.2);  /* 80% white */
+  background-color: rgba(255, 255, 255, 0.32);  /* 80% white */
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
   border-radius:12px;
 }
