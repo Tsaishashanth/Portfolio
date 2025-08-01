@@ -217,6 +217,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   border-radius: 10px;
   /* box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); glowing box */
   border: 1px solid #00ffff33; /* soft border */
+  /* flex-wrap:wrap; */
+  height:auto;
 }
 
 .tech-row{
@@ -225,18 +227,37 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
 }
 
 .stacksymbols {
-  /* margin-top:2rem; */
   border: 1px solid #f5f7f733;
-  height:4rem;
+  height: auto; 
   width: 100%;
-  display:flex;
-  /* flex-direction:column; */
-  justify-content:center;
-  /* background-color: #0f1c2e; */
-  background-color: rgba(255, 255, 255, 0.32);  /* 80% white */
+  display: flex;
+  flex-wrap: wrap;           
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.32);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
-  border-radius:12px;
+  border-radius: 12px;
+  gap: 10px;                 
+  padding: 10px;             
+  /* overflow: hidden; */
+  box-sizing:border-box;
 }
+.symbolssize {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.symbolssize img {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .tech-box {
   display:flex;
   flex-direction:column;
