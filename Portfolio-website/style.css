@@ -146,6 +146,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   font-size:30px;
   color: #137e7e;
   margin-bottom:1rem;
+  min-height:35px;
 }
 
 .start-btn {
@@ -234,8 +235,9 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   flex-wrap: wrap;           
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.32);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.32); */
+  background: linear-gradient(135deg, #0f1c2e, #2e1f3f);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
   border-radius: 12px;
   gap: 10px;                 
   padding: 10px;             
@@ -247,8 +249,9 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
   width: 100%;
+  padding:10px;
 }
 
 .symbolssize img {
@@ -256,6 +259,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   width: auto;
   max-width: 100%;
   object-fit: contain;
+  transition: transform 0.3s;
 }
 
 .tech-box {
@@ -269,6 +273,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #f5f7f733;
   
 }
 .still-item{
@@ -311,7 +316,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   font-family: 'Lucida Console', 'Lucida Sans Unicode', 'Lucida Sans', monospace;
 } */
 
-.symbolssize{
+/* .symbolssize{
   display:flex;
   gap:40px;
   align-items:center;
@@ -320,8 +325,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
 }
 .symbolssize img {
   height: 40px;
-  transition: transform 0.3s;
-}
+  transition: transform 0.3s; */
+
 .symbolssize img:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 6px #00ffffaa);
@@ -354,6 +359,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   transition: color 0.3s, text-shadow 0.3s;
   height:2rem;
   text-shadow:0 0 2px #00ffff33; 
+  
 }
 
 .tech-box li:hover {
@@ -495,6 +501,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #f5f7f733;
 }
 
 .stats-box:hover {
