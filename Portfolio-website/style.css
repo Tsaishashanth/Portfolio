@@ -781,6 +781,9 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     height: 200px;
     margin-bottom: 20px;
   }
+  .still-learning{
+    width:50%;
+  }
 }
 @media (max-width: 768px) {
   .bar {
