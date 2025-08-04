@@ -11,7 +11,7 @@ function opengithub(){
 }
 
 function openleetcode(){
-  window.open('https://leetcode.com/u/shashanthaiml2024/', '_blank');
+  window.open('https://leetcode.com/u/TarigopulaSaiShashanth/', '_blank');
 }
 function opendevseekr() {
   window.open('https://devseekr.vercel.app/', '_blank');
