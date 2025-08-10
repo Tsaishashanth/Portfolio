@@ -881,6 +881,11 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     margin-top:1rem;
     margin-bottom:1rem;
   }
+  .symbolssize img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #00ffffaa);
+  }
+  
   .tech-box {
     width: 90%;
     padding: 15px;
@@ -974,6 +979,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 100%;
+    word-break: break-word;
   }
 
   .my-hobbies-img {
@@ -986,9 +993,6 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     padding: 0 1rem;
   }
 
-  .timeline-content h4 {
-    display:none;
-  }
 
   .typing {
     height: 200px;
