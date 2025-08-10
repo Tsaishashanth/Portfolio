@@ -372,8 +372,8 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
 .project-box {
   flex: 1;
   background: linear-gradient(135deg, #103f3f, #1b6b6b);
-
-
+  flex-direction:column;
+  gap:20px;
   padding: 20px;
   border-radius: 10px;
   color: white;
@@ -393,6 +393,58 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   margin-bottom: 15px;
   text-shadow: 0 0 5px #00ffff88;
 }
+.projectstack {
+  display: flex;
+  flex-direction: row; /* keep them side by side */
+  justify-content: center; /* push 1 left, 2 right */
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+
+}
+.projectstack img {
+  max-width: 20px; /* or any size you like */
+  height: auto;
+}
+
+
+.projectstack1 {
+  display:flex;
+  flex-direction:row;
+  border: 1px solid #f5f7f733;
+  gap:10px;
+  /* max-width:100%; */
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  border-radius:20px;
+  height:1.5rem;
+}
+.projectstack2 {
+  display: flex;
+  flex-direction: row; /* icons in a row */
+  align-items: center;
+  gap: 10px; /* space between icons */
+  border: 1px solid #f5f7f733;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #f5f7f733;
+
+}
+
+.projectphoto {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projectphoto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+
 /* academic section */
 .timeline {
   border-left: 3px solid #00ff66;
