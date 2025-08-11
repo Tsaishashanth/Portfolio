@@ -62,7 +62,9 @@ a:visited {
     margin: 0;          /* remove default margins */
   padding: 0;         /* remove default left padding */
   /* margin-right: auto; */
+  font-family: 'Share Tech Mono', monospace;
   
+
 }
 
 
