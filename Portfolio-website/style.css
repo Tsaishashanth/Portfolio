@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -38,12 +40,31 @@ a:visited {
   align-items: center;
 }
 
-.nav-links {
-    flex:1;
-    list-style:none;
-    display:flex;
-    gap:30px;
+.profileviews{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
 }
+.profileviewstext{
+  font-family: 'Press Start 2P', monospace;
+  color:green;
+  text-shadow: rgb(130, 84, 50) -2px -2px 0px, rgb(130, 84, 50) 2px -2px 0px, rgb(130, 84, 50) -2px 2px 0px, rgb(130, 84, 50) 2px 2px 0px, rgb(130, 84, 50) -1px -1px 0px, rgb(130, 84, 50) 1px -1px 0px, rgb(130, 84, 50) -1px 1px 0px, rgb(130, 84, 50) 1px 1px 0px;
+  font-size:0.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  /* width: fit-content; */
+  margin-right: auto; /* pushes it to the left in a flex parent */
+    margin: 0;          /* remove default margins */
+  padding: 0;         /* remove default left padding */
+  /* margin-right: auto; */
+  
+}
+
 
 .nav-links li{
     color:#ccc;
@@ -314,9 +335,11 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   border-radius: 50%;
 }
 
-/* .Learning-text{
-  font-family: 'Lucida Console', 'Lucida Sans Unicode', 'Lucida Sans', monospace;
-} */
+ .Learning-text{
+  font-family: 'Doto', sans-serif;
+
+
+} 
 
 /* .symbolssize{
   display:flex;
@@ -867,7 +890,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   .stacksymbols {
     max-width:100%;
     /* justify-content:center; */
-    overflow: hidden;
+    /* overflow: hidden; */
     height:auto;
     
   }
@@ -885,7 +908,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   transform: scale(1.2);
   filter: drop-shadow(0 0 6px #00ffffaa);
   }
-  
+
   .tech-box {
     width: 90%;
     padding: 15px;
