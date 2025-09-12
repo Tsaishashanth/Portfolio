@@ -3,7 +3,9 @@ const nodemailer =require('nodemailer');
 const cors = require('cors');
 const app = express();
 const path = require('path');
+import dotenv from "dotenv";
 
+dotenv.config();
 
 
 // Allow only your frontend URL (safe practice)
@@ -21,7 +23,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname));
 });
 
-
+import profileRoutes from "./routes/profile.js";
+app.use("/api/profile", profileRoutes);
 
 app.post('/send-email', async (req, res) => {
     const{name,email,message}= req.body;
@@ -53,7 +56,16 @@ app.post('/send-email', async (req, res) => {
     }
 });
 
+// MongoDB connect
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => console.log("✅ MongoDB connected"))
+  .catch(err => console.log("❌ MongoDB error:", err));
+
 const PORT = process.env.PORT || 3000;
+
+
 
 app.listen(PORT, () => {
   console.log(`\x1b[36mClick here 👉 http://localhost:${PORT}\x1b[0m`);

@@ -89,3 +89,12 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     alert('Error sending message.');
   }
 });
+
+// increment when profile viewed
+fetch("http://localhost:5000/api/profile/add", {
+  method: "POST"
+})
+.then(res => res.json())
+.then(data => {
+  document.getElementById("profile-views").innerText = data.count;
+});
