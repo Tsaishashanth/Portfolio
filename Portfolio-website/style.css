@@ -894,6 +894,7 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
     /* justify-content:center; */
     /* overflow: hidden; */
     height:auto;
+
     
   }
   .symbolssize{
@@ -909,6 +910,11 @@ box-shadow: 0 8px 32px 0 rgba(0, 200, 255, 0.3);
   .symbolssize img:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 6px #00ffffaa);
+  }
+
+  .symbolssize p {
+    color: white;
+    display:block;
   }
 
   .tech-box {
